@@ -43,8 +43,8 @@ public class ValidateBST {
         public long min(TreeNode node) {
             if (node == null)
                 return Long.MAX_VALUE;
-            long mn = min(node.left);
-            return Math.min(mn, node.val);
+            long min = min(node.left);
+            return Math.min(min, node.val);
         }
     }
 }
